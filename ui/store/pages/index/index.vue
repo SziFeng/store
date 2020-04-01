@@ -1,6 +1,10 @@
 <template>
 	<view class="content">
-		启动页
+		<view class="" @click="test">
+			启动页
+		</view>
+		<view class="bot-bar" >
+		</view>
 	</view>
 </template>
 
@@ -15,7 +19,10 @@
 
 		},
 		methods: {
-
+			test(){
+				console.log('1111')
+				this.$push('test',{name:'szf'})
+			}
 		}
 	}
 </script>
@@ -27,23 +34,12 @@
 		align-items: center;
 		justify-content: center;
 	}
-
-	.logo {
-		height: 200rpx;
-		width: 200rpx;
-		margin-top: 200rpx;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 50rpx;
-	}
-
-	.text-area {
-		display: flex;
-		justify-content: center;
-	}
-
-	.title {
-		font-size: 36rpx;
-		color: #8f8f94;
+	.bot-bar{
+		position: fixed;
+		width: 100%;
+		height:100upx;
+		left: 0;
+		bottom: 0;
+		background-color: rgba(234, 234, 234, 0.7);
 	}
 </style>

@@ -1,8 +1,6 @@
 <template>
 	<view>
-		<view class="" @click="test">
-		shopcar
-		</view>
+		test
 	</view>
 </template>
 
@@ -13,11 +11,11 @@
 				
 			}
 		},
+		onLoad(options) {
+			console.log('options', this.$getParams(options))
+		},
 		methods: {
-			test(){
-				console.log('1111')
-				this.$push('/pages/index/index')
-			}
+			
 		}
 	}
 </script>

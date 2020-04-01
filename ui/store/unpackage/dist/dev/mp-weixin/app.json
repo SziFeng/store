@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/category/category",
     "pages/shopcar/shopcar",
-    "pages/user/user"
+    "pages/user/user",
+    "pages/shopcar/test/test"
   ],
   "subPackages": [],
   "window": {
@@ -12,31 +13,10 @@
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8"
   },
-  "tabBar": {
-    "list": [
-      {
-        "pagePath": "pages/index/index",
-        "text": "首页"
-      },
-      {
-        "pagePath": "pages/category/category",
-        "text": "分类"
-      },
-      {
-        "pagePath": "pages/shopcar/shopcar",
-        "text": "购物车"
-      },
-      {
-        "pagePath": "pages/user/user",
-        "text": "我的"
-      }
-    ]
-  },
   "permission": {
     "scope.userLocation": {
       "desc": "个人开发"
     }
   },
-  "usingComponents": {},
-  "sitemapLocation": "sitemap63.json"
+  "usingComponents": {}
 }

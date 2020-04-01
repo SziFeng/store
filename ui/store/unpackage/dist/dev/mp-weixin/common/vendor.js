@@ -7594,9 +7594,9 @@ module.exports = g;
 
 /***/ }),
 /* 4 */
-/*!********************************!*\
-  !*** E:/code/store/pages.json ***!
-  \********************************/
+/*!************************************************!*\
+  !*** E:/code/person/store/ui/store/pages.json ***!
+  \************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8501,20 +8501,20 @@ module.exports = {"_from":"@dcloudio/uni-stat@alpha","_id":"@dcloudio/uni-stat@2
 
 /***/ }),
 /* 7 */
-/*!*************************************************!*\
-  !*** E:/code/store/pages.json?{"type":"style"} ***!
-  \*************************************************/
+/*!*****************************************************************!*\
+  !*** E:/code/person/store/ui/store/pages.json?{"type":"style"} ***!
+  \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/index/index": { "navigationBarTitleText": "商城首页" }, "pages/category/category": { "navigationBarTitleText": "分类" }, "pages/shopcar/shopcar": { "navigationBarTitleText": "购物车" }, "pages/user/user": { "navigationBarTitleText": "我的" } }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "商城", "navigationBarBackgroundColor": "#F8F8F8", "backgroundColor": "#F8F8F8" } };exports.default = _default;
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/index/index": { "navigationBarTitleText": "商城首页", "usingComponents": {}, "usingAutoImportComponents": {} }, "pages/category/category": { "navigationBarTitleText": "分类" }, "pages/shopcar/shopcar": { "navigationBarTitleText": "购物车" }, "pages/user/user": { "navigationBarTitleText": "我的" }, "pages/shopcar/test/test": {} }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "商城", "navigationBarBackgroundColor": "#F8F8F8", "backgroundColor": "#F8F8F8" } };exports.default = _default;
 
 /***/ }),
 /* 8 */
-/*!************************************************!*\
-  !*** E:/code/store/pages.json?{"type":"stat"} ***!
-  \************************************************/
+/*!****************************************************************!*\
+  !*** E:/code/person/store/ui/store/pages.json?{"type":"stat"} ***!
+  \****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8645,6 +8645,55 @@ function normalizeComponent (
   }
 }
 
+
+/***/ }),
+/* 15 */
+/*!****************************************************!*\
+  !*** E:/code/person/store/ui/store/utils/index.js ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //构建需要传的数据
+var mytools = {};
+var setParams = function setParams(url) {var query = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+  if (!query) return url;
+  var joiner = url.match(/\?/) ? '&' : '?';
+  var queryStr = Object.keys(query).
+  map(function (key) {return "".concat(key, "=").concat(encodeURIComponent(JSON.stringify(query[key])));}).
+  join('&');
+  return url + joiner + queryStr;
+};
+mytools.install = function (Vue) {
+  //格式化拿到的数据
+  Vue.prototype.$getParams = function () {var originQuery = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+    var result = {};
+    if (!originQuery) return {};
+    return Object.keys(originQuery).reduce(function (prev, curr) {
+      result[curr] = JSON.parse(decodeURIComponent(originQuery[curr]));
+      return result;
+    }, result);
+  };
+  Vue.prototype.$push = function (url) {var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
+    console.log('目的路径:', this.$getUrl[url]);
+    uni.navigateTo({ url: setParams(this.$getUrl[url], params) });
+  };
+};var _default =
+mytools;exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+/* 16 */
+/*!******************************************************!*\
+  !*** E:/code/person/store/ui/store/router/router.js ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  test: "/pages/shopcar/test/test" };exports.default = _default;
 
 /***/ })
 ]]);
