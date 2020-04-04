@@ -1,0 +1,1 @@
+<view><my-swiper vue-id="1" imgList="{{imgList}}" bind:__l="__l"></my-swiper></view>

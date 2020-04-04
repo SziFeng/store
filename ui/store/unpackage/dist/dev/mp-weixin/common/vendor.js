@@ -8508,7 +8508,7 @@ module.exports = {"_from":"@dcloudio/uni-stat@alpha","_id":"@dcloudio/uni-stat@2
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/index/index": { "navigationBarTitleText": "商城首页", "usingComponents": {}, "usingAutoImportComponents": {} }, "pages/category/category": { "navigationBarTitleText": "分类" }, "pages/shopcar/shopcar": { "navigationBarTitleText": "购物车" }, "pages/user/user": { "navigationBarTitleText": "我的" }, "pages/shopcar/test/test": {} }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "商城", "navigationBarBackgroundColor": "#F8F8F8", "backgroundColor": "#F8F8F8" } };exports.default = _default;
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/index/index": { "navigationBarTitleText": "商城", "usingComponents": { "store": "/pages/index/store/store", "category": "/pages/index/category/category", "shop-car": "/pages/index/shopcar/shopcar", "user": "/pages/index/user/user" }, "usingAutoImportComponents": {} }, "cpmponents/my-swiper/my-swiper": { "usingComponents": {}, "usingAutoImportComponents": {} } }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "商城", "navigationBarBackgroundColor": "#F8F8F8", "backgroundColor": "#F8F8F8" } };exports.default = _default;
 
 /***/ }),
 /* 8 */
@@ -8694,6 +8694,49 @@ mytools;exports.default = _default;
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
   test: "/pages/shopcar/test/test" };exports.default = _default;
+
+/***/ }),
+/* 17 */,
+/* 18 */,
+/* 19 */,
+/* 20 */,
+/* 21 */,
+/* 22 */,
+/* 23 */,
+/* 24 */,
+/* 25 */,
+/* 26 */,
+/* 27 */,
+/* 28 */,
+/* 29 */,
+/* 30 */
+/*!***********************************************************!*\
+  !*** E:/code/person/store/ui/store/common/image/img1.jpg ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/img/img1.4ea28346.jpg";
+
+/***/ }),
+/* 31 */
+/*!***********************************************************!*\
+  !*** E:/code/person/store/ui/store/common/image/img2.jpg ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/img/img2.82ac960b.jpg";
+
+/***/ }),
+/* 32 */
+/*!***********************************************************!*\
+  !*** E:/code/person/store/ui/store/common/image/img3.jpg ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/img/img3.82ac960b.jpg";
 
 /***/ })
 ]]);

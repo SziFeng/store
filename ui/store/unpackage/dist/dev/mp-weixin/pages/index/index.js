@@ -144,21 +144,46 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var store = function store() {return Promise.all(/*! import() | pages/index/store/store */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/index/store/store")]).then(__webpack_require__.bind(null, /*! ./store/store.vue */ 25));};var shopCar = function shopCar() {return __webpack_require__.e(/*! import() | pages/index/shopcar/shopcar */ "pages/index/shopcar/shopcar").then(__webpack_require__.bind(null, /*! ./shopcar/shopcar.vue */ 35));};var user = function user() {return __webpack_require__.e(/*! import() | pages/index/user/user */ "pages/index/user/user").then(__webpack_require__.bind(null, /*! ./user/user.vue */ 40));};var category = function category() {return __webpack_require__.e(/*! import() | pages/index/category/category */ "pages/index/category/category").then(__webpack_require__.bind(null, /*! ./category/category.vue */ 45));};var _default =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {
+  components: {
+    store: store, /* 首页 */
+    category: category, /* 分类 */
+    shopCar: shopCar, /* 购物车 */
+    user: user /* 我的 */ },
+
   data: function data() {
     return {
-      title: 'Hello' };
+      iconList: [
+      { name: '店家', icon: 'iconstore' },
+      { name: '分类', icon: 'iconsearch' },
+      { name: '购物车', icon: 'iconcart' },
+      { name: '我的', icon: 'iconuser' }],
+
+      active: '店家',
+      type: 0 };
 
   },
   onLoad: function onLoad() {
@@ -168,6 +193,10 @@ var _default =
     test: function test() {
       console.log('1111');
       this.$push('test', { name: 'szf' });
+    },
+    change: function change(val, index) {
+      this.active = val;
+      this.type = index;
     } } };exports.default = _default;
 
 /***/ }),

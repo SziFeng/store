@@ -1,4 +1,9 @@
 {
-  "navigationBarTitleText": "商城首页",
-  "usingComponents": {}
+  "navigationBarTitleText": "商城",
+  "usingComponents": {
+    "store": "/pages/index/store/store",
+    "category": "/pages/index/category/category",
+    "shop-car": "/pages/index/shopcar/shopcar",
+    "user": "/pages/index/user/user"
+  }
 }

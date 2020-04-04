@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "my-swiper": "/cpmponents/my-swiper/my-swiper"
+  },
+  "component": true
+}
