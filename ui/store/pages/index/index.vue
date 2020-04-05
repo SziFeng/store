@@ -1,7 +1,7 @@
 <template>
-	<view class="content">
+	<view class="content"  @touchstart="touchstart" @touchend="touchend">
 		<!--  首页  -->
-		<view  class="wrapper" v-if="type===0"><store></store></view>
+		<view ref="store" class="wrapper" v-if="type===0"><store></store></view>
 		<!-- 分类 -->
 		<view class="wrapper" v-if="type===1"><category></category></view>
 		<!-- 购物车 -->
@@ -37,11 +37,19 @@
 					{name:'我的',icon:'iconuser'},
 				],
 				active:'店家',
-				type:0
+				type:0,
+				flag:true
 			}
 		},
 		onLoad() {
 
+		},
+		onPageScroll(res){
+			if(res.scrollTop===0){
+				this.flag=true
+			} else{
+				this.flag =false
+			}
 		},
 		methods: {
 			test(){
@@ -51,6 +59,39 @@
 			change(val,index){
 				this.active=val
 				this.type=index
+			},
+			touchstart(e){
+				this.vueTouches=e.changedTouches[0]?{x:e.changedTouches[0].pageX,y:e.changedTouches[0].pageY}:{x:0,y:0}
+			},
+			touchend(e){
+				let disX=e.changedTouches[0]? (e.changedTouches[0].pageX-this.vueTouches.x):0//计算移动的位移差
+				let disY=e.changedTouches[0]?(e.changedTouches[0].pageY-this.vueTouches.y):0
+				if(Math.abs(disX)>10||Math.abs(disY)>100){//当横向位移大于10，纵向位移大于100，则判定为滑动事件
+					this.touchType=="swipe"&&this.vueCallBack(this.binding.value,e);//若为滑动事件则返回
+					if(Math.abs(disX)>Math.abs(disY)){//判断是横向滑动还是纵向滑动
+						if(disX>100){//右滑
+						console.log('右滑')
+						if(this.type>0){
+							this.type-=1
+						}
+						};
+						if(disX<-100){//左滑
+						console.log('左滑')
+						if(this.type<3){
+							this.type+=1
+						}
+						};
+					}else{
+						if(disY>10){//下滑
+						console.log('下滑',this.$children,this.$refs)
+						if(this.flag){this.$children[0].showDown()}
+						};
+						if(disY<-10){//上滑
+						console.log('上滑')
+						this.$children[0].showUp()
+						};  
+					};
+				}
 			}
 		}
 	}
@@ -84,5 +125,8 @@
 	.setect-tab{
 		color: #5f4534 !important;
 		border-bottom: 6rpx solid #5f4534;
+	}
+	.wrapper{
+		padding-bottom: 110rpx;
 	}
 </style>

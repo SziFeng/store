@@ -42,4 +42,7 @@
 		color: #5f4534 !important;
 		border-bottom: 6rpx solid #5f4534;
 }
+.wrapper{
+		padding-bottom: 110rpx;
+}
 

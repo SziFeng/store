@@ -16,6 +16,22 @@
 	height: 100%;
 }  
 
+.myflex{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.my-view{
+	height: 50rpx;
+	padding: 15rpx 5rpx;
+	line-height: 50rpx;
+	font-size: 28rpx;
+	background: #FFF;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	flex: 1;
+}
+
 /* 背景色 */
 .uni-bg-red{
 	background:#F76260; color:#FFF;

@@ -1,6 +1,8 @@
 {
+  "component": true,
   "usingComponents": {
-    "my-swiper": "/cpmponents/my-swiper/my-swiper"
-  },
-  "component": true
+    "my-swiper": "/cpmponents/my-swiper/my-swiper",
+    "menu-list": "/cpmponents/menu-list/menu-list",
+    "card-cell": "/cpmponents/card-cell/card-cell"
+  }
 }

@@ -1,0 +1,45 @@
+
+.card-cell{
+	padding: 20rpx;
+	text-align: center;
+}
+.img-cell{
+	position: relative;
+}
+.card-img{
+	width: 300rpx;
+	height: 300rpx;
+	border-radius: 30rpx;
+}
+.img-element1{
+	top: 20rpx;
+	right: 30rpx;
+}
+.img-element2{
+	bottom: 20rpx;
+	left: 30rpx;
+}
+.element{
+	position: absolute;
+	width: 75rpx;
+	height: 75rpx;
+	background-color: rgba(255,255,255,0.85);
+	border-radius: 50%;
+	line-height: 75rpx;
+}
+.iconhongxin{
+	font-size: 40rpx;
+	color: #ea4d4f;
+}
+.iconkongxin{
+	font-size: 40rpx;
+}
+.text-cell{
+	padding-left:20rpx;
+	text-align: left;
+	color: #666666;
+}
+.txt2{
+	font-size: 36rpx;
+}
+
