@@ -1,11 +1,11 @@
 <template>
 	<view class="card-cell" >
 		<view class="img-cell">
-			<image class="card-img" :src="require('../../common/image/img5.jpg')" mode="scaleToFill"></image>
-			<view class="img-element1 element" @click="xin=!xin">
-				<i class="iconfont" :class="[xin?' iconkongxin':' iconhongxin']"></i>
+			<image class="card-img" :src="require('../../common/image/img5.jpg')" mode="aspectFill"></image>
+			<view class="img-element1 element" @click="xin=!xin" v-if="point1">
+				<i class="iconfont" :class="[xin?' iconhongxin':' iconkongxin']"></i>
 			</view>
-			<view class="img-element2 element">
+			<view class="img-element2 element" v-if="point2">
 				<text>新</text>
 			</view>
 		</view>
@@ -19,6 +19,16 @@
 
 <script>
 	export default{
+		props:{
+			point1:{
+				type:Boolean,
+				default:false
+			},
+			point2:{
+				type:Boolean,
+				default:false
+			}
+		},
 		data(){
 			return{
 				xin:false
@@ -29,14 +39,16 @@
 
 <style>
 	.card-cell{
-		padding: 20rpx;
+		margin: 20rpx;
 		text-align: center;
+		border-radius: 30rpx;
+		box-shadow: 4rpx 4rpx 10rpx #CCCCCC;
 	}
 	.img-cell{
 		position: relative;
 	}
 	.card-img{
-		width: 300rpx;
+		width: 100%;
 		height: 300rpx;
 		border-radius: 30rpx;
 	}

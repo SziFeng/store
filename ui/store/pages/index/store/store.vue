@@ -9,7 +9,7 @@
 			</view>
 			<view class="card-list">
 				<block v-for="(res) in 4" :key="res">
-					<card-cell></card-cell>
+					<card-cell :point1="true" :point2="true"></card-cell>
 				</block>
 			</view>
 		</view>

@@ -37,7 +37,7 @@
 					{name:'我的',icon:'iconuser'},
 				],
 				active:'店家',
-				type:0,
+				type:1,
 				flag:true
 			}
 		},
@@ -80,15 +80,15 @@
 						if(this.type<3){
 							this.type+=1
 						}
-						};
+					};
 					}else{
 						if(disY>10){//下滑
 						console.log('下滑',this.$children,this.$refs)
-						if(this.flag){this.$children[0].showDown()}
+						if(this.flag&&this.type===0){this.$children[0].showDown()}
 						};
 						if(disY<-10){//上滑
 						console.log('上滑')
-						this.$children[0].showUp()
+						if(this.type===0){this.$children[0].showUp()}
 						};  
 					};
 				}
@@ -116,6 +116,7 @@
 		/* background-color: rgba(234, 234, 234, 0.7); */
 		background-color: rgba(255, 255, 255, 0.85);
 		padding-bottom: 6rpx;
+		box-shadow: 0 0 20rpx rgba(0,0,0,0.1);
 	}
 	.tab-icon{
 		padding: 0 30rpx 0 ;

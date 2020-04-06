@@ -133,7 +133,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var store = function store() {return Promise.all(/*! import() | pages/index/store/store */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/index/store/store")]).then(__webpack_require__.bind(null, /*! ./store/store.vue */ 26));};var shopCar = function shopCar() {return __webpack_require__.e(/*! import() | pages/index/shopcar/shopcar */ "pages/index/shopcar/shopcar").then(__webpack_require__.bind(null, /*! ./shopcar/shopcar.vue */ 44));};var user = function user() {return __webpack_require__.e(/*! import() | pages/index/user/user */ "pages/index/user/user").then(__webpack_require__.bind(null, /*! ./user/user.vue */ 49));};var category = function category() {return __webpack_require__.e(/*! import() | pages/index/category/category */ "pages/index/category/category").then(__webpack_require__.bind(null, /*! ./category/category.vue */ 54));};var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var store = function store() {return Promise.all(/*! import() | pages/index/store/store */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/index/store/store")]).then(__webpack_require__.bind(null, /*! ./store/store.vue */ 26));};var shopCar = function shopCar() {return __webpack_require__.e(/*! import() | pages/index/shopcar/shopcar */ "pages/index/shopcar/shopcar").then(__webpack_require__.bind(null, /*! ./shopcar/shopcar.vue */ 36));};var user = function user() {return Promise.all(/*! import() | pages/index/user/user */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/index/user/user")]).then(__webpack_require__.bind(null, /*! ./user/user.vue */ 41));};var category = function category() {return __webpack_require__.e(/*! import() | pages/index/category/category */ "pages/index/category/category").then(__webpack_require__.bind(null, /*! ./category/category.vue */ 49));};var _default =
 
 
 
@@ -172,7 +172,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
       { name: '我的', icon: 'iconuser' }],
 
       active: '店家',
-      type: 0,
+      type: 1,
       flag: true };
 
   },
@@ -219,11 +219,11 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
         } else {
           if (disY > 10) {//下滑
             console.log('下滑', this.$children, this.$refs);
-            if (this.flag) {this.$children[0].showDown();}
+            if (this.flag && this.type === 0) {this.$children[0].showDown();}
           };
           if (disY < -10) {//上滑
             console.log('上滑');
-            this.$children[0].showUp();
+            if (this.type === 0) {this.$children[0].showUp();}
           };
         };
       }
