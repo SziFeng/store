@@ -42,7 +42,7 @@
 	}
 </script>
 
-<style>
+<style scoped>
 .swiper{
 	/* padding: 30rpx; */
 	height: 400rpx;

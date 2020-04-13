@@ -1,27 +1,27 @@
 
-.card-cell{
+.card-cell.data-v-b62fa148{
 	margin: 20rpx;
 	text-align: center;
 	border-radius: 30rpx;
 	box-shadow: 4rpx 4rpx 10rpx #CCCCCC;
 }
-.img-cell{
+.img-cell.data-v-b62fa148{
 	position: relative;
 }
-.card-img{
+.card-img.data-v-b62fa148{
 	width: 100%;
 	height: 300rpx;
 	border-radius: 30rpx;
 }
-.img-element1{
+.img-element1.data-v-b62fa148{
 	top: 20rpx;
 	right: 30rpx;
 }
-.img-element2{
+.img-element2.data-v-b62fa148{
 	bottom: 20rpx;
 	left: 30rpx;
 }
-.element{
+.element.data-v-b62fa148{
 	position: absolute;
 	width: 75rpx;
 	height: 75rpx;
@@ -29,19 +29,19 @@
 	border-radius: 50%;
 	line-height: 75rpx;
 }
-.iconhongxin{
+.iconhongxin.data-v-b62fa148{
 	font-size: 40rpx;
 	color: #ea4d4f;
 }
-.iconkongxin{
+.iconkongxin.data-v-b62fa148{
 	font-size: 40rpx;
 }
-.text-cell{
+.text-cell.data-v-b62fa148{
 	padding-left:20rpx;
 	text-align: left;
 	color: #666666;
 }
-.txt2{
+.txt2.data-v-b62fa148{
 	font-size: 36rpx;
 }
 

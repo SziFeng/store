@@ -7927,6 +7927,17 @@ module.exports = __webpack_require__.p + "static/img/img3.82ac960b.jpg";
 
 /***/ }),
 
+/***/ 39:
+/*!***********************************************************!*\
+  !*** E:/code/person/store/ui/store/common/image/img4.jpg ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/img/img4.1c6ff022.jpg";
+
+/***/ }),
+
 /***/ 4:
 /*!************************************************!*\
   !*** E:/code/person/store/ui/store/pages.json ***!
@@ -7939,7 +7950,7 @@ module.exports = __webpack_require__.p + "static/img/img3.82ac960b.jpg";
 
 /***/ }),
 
-/***/ 44:
+/***/ 47:
 /*!***********************************************************!*\
   !*** E:/code/person/store/ui/store/common/image/img6.jpg ***!
   \***********************************************************/
@@ -8848,17 +8859,6 @@ module.exports = {"_from":"@dcloudio/uni-stat@alpha","_id":"@dcloudio/uni-stat@2
 
 /***/ }),
 
-/***/ 66:
-/*!***********************************************************!*\
-  !*** E:/code/person/store/ui/store/common/image/img4.jpg ***!
-  \***********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/img/img4.1c6ff022.jpg";
-
-/***/ }),
-
 /***/ 7:
 /*!*****************************************************************!*\
   !*** E:/code/person/store/ui/store/pages.json?{"type":"style"} ***!
@@ -8871,7 +8871,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 
-/***/ 74:
+/***/ 76:
 /*!***********************************************************!*\
   !*** E:/code/person/store/ui/store/common/image/img5.jpg ***!
   \***********************************************************/

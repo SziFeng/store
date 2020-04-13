@@ -25,12 +25,11 @@
 	}
 </script>
 
-<style>
+<style scoped>
 	.card{
 		border-radius: 5%;
 		width: 110px;
 		height: 120px;
 		border: #EEEEEE solid 1rpx;
 	}
-
 </style>

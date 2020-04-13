@@ -1,5 +1,5 @@
 
-@-webkit-keyframes show{
+@-webkit-keyframes show-data-v-53f7fa94{
 from{
 		height: 590rpx;
 }
@@ -7,7 +7,7 @@ to{
 		height: 300rpx;
 }
 }
-@keyframes show{
+@keyframes show-data-v-53f7fa94{
 from{
 		height: 590rpx;
 }
@@ -15,16 +15,16 @@ to{
 		height: 300rpx;
 }
 }
-.menu{
+.menu.data-v-53f7fa94{
 	height: 300rpx;
 	overflow: hidden;
 	display: grid;
 	grid-template-columns: repeat(3,33.33%);
 	margin: 20rpx 10rpx;
-	-webkit-animation: show 1s;
-	        animation: show 1s;
+	-webkit-animation: show-data-v-53f7fa94 1s;
+	        animation: show-data-v-53f7fa94 1s;
 }
-@-webkit-keyframes show2{
+@-webkit-keyframes show2-data-v-53f7fa94{
 from{
 		height: 300rpx;
 }
@@ -32,7 +32,7 @@ to{
 		height: 590rpx;
 }
 }
-@keyframes show2{
+@keyframes show2-data-v-53f7fa94{
 from{
 		height: 300rpx;
 }
@@ -40,27 +40,27 @@ to{
 		height: 590rpx;
 }
 }
-.menu2{
+.menu2.data-v-53f7fa94{
 	height: 590rpx;
 	overflow: hidden;
 	/* overflow-y: scroll; */
 	display: grid;
 	grid-template-columns: repeat(3,33.33%);
 	margin: 20rpx 10rpx;
-	-webkit-animation: show2 1s;
-	        animation: show2 1s;
+	-webkit-animation: show2-data-v-53f7fa94 1s;
+	        animation: show2-data-v-53f7fa94 1s;
 }
-.menu3{
+.menu3.data-v-53f7fa94{
 	height: 900rpx;
 	overflow: hidden;
 	overflow-y: scroll;
 	display: grid;
 	grid-template-columns: repeat(3,33.33%);
 	margin: 20rpx 10rpx;
-	-webkit-animation: show2 1s;
-	        animation: show2 1s;
+	-webkit-animation: show2-data-v-53f7fa94 1s;
+	        animation: show2-data-v-53f7fa94 1s;
 }
-.menu-bot{
+.menu-bot.data-v-53f7fa94{
 	position:relative ;
 	bottom: 0rpx;
 	width: 90rpx;
@@ -71,12 +71,12 @@ to{
 	        transform: translateX(-50%);
 	border-radius: 30rpx;
 }
-.card{
+.card.data-v-53f7fa94{
 	padding: 0 10rpx;
 	height: 300rpx;
 	border-radius: 30rpx;
 }
-.card-item{
+.card-item.data-v-53f7fa94{
 	height: 224rpx;
 	box-sizing: border-box;
 	box-sizing: content-box;
@@ -88,13 +88,13 @@ to{
 	-webkit-justify-content: center;
 	        justify-content: center;
 }
-.card-img {
+.card-img.data-v-53f7fa94 {
 	position: absolute;
 	width: 95%;
 	height: inherit;
 	border-radius: 30rpx;
 }
-.card-text{
+.card-text.data-v-53f7fa94{
 	text-align: center;
 	vertical-align: baseline;
 	font-size: 32rpx;

@@ -37,7 +37,7 @@
 					{name:'我的',icon:'iconuser'},
 				],
 				active:'店家',
-				type:1,
+				type:0,
 				flag:true
 			}
 		},
@@ -71,15 +71,11 @@
 					if(Math.abs(disX)>Math.abs(disY)){//判断是横向滑动还是纵向滑动
 						if(disX>100){//右滑
 						console.log('右滑')
-						if(this.type>0){
-							this.type-=1
-						}
+						if(this.type>0){this.type-=1}//滑动切换页面
 						};
 						if(disX<-100){//左滑
 						console.log('左滑')
-						if(this.type<3){
-							this.type+=1
-						}
+						if(this.type<3){this.type+=1}//滑动切换页面
 					};
 					}else{
 						if(disY>10){//下滑
@@ -97,7 +93,7 @@
 	}
 </script>
 
-<style>
+<style scoped>
 	.content {
 		display: flex;
 		flex-direction: column;

@@ -1,22 +1,36 @@
 <template>
 	<view class="container">
-		<view >
-			<image class="back-img" :src="require('../../../common/image/img1.jpg')" mode="scaleToFill" ></image>
-		</view>
 		<view class="info">
 			<view class="info-img">
-				<image class="cell1" :src="require('../../../common/image/img6.jpg')" mode="scaleToFill"></image>
+				<view class="img-cell">
+					<image class="cell1" :src="require('../../../common/image/img6.jpg')" mode=""></image>
+				</view>
 			</view>
-			<view class="cell2">
-				<text>你的名字</text>
-			</view>
-			<view class="cell3">
-				<text>广东XX,中国</text>
+			<view class="info-message">
+				<view class="info-name">不再飞的鱼</view>
+				<view class="info-txt">描述你自己......</view>
+				<view class="info-person">
+					<view class="cell2">
+						<view>365</view>
+						<view>钱包</view>
+					</view>
+					<view class="cell2">
+						<view>35</view>
+						<view>收藏</view>
+					</view>
+					<view class="cell2">
+						<view>3634</view>
+						<view>浏览历史</view>
+					</view>
+				</view>
 			</view>
 		</view>
 		<view class="list ">
 			<view class="list-cell myflex" v-for="(item,index) in list" :key="index">
-				<view class="cell-name">{{item.name}}</view>
+				<view class="cell-name">
+					<i  class="iconfont" :class="item.icon" ></i>
+					<text>{{item.name}}</text>
+				</view>
 				<view class="cell-icon"><i class="iconfont iconright"></i></view>
 			</view>
 		</view>
@@ -28,11 +42,11 @@
 		data() {
 			return {
 				list:[
-					{name:'账户',path:''},
-					{name:'地址管理',path:''},
-					{name:'消息',path:''},
-					{name:'密码',path:''},
-					{name:'设置',path:''},
+					{name:'我的订单',icon:'iconorder',path:''},
+					{name:'地址管理',icon:'iconaddress',path:''},
+					{name:'消息',icon:'iconmessage',path:''},
+					{name:'密码',icon:'iconkeys',path:''},
+					{name:'设置',icon:'iconsetting',path:''},
 				]
 			}
 		},
@@ -43,50 +57,54 @@
 </script>
 
 <style scoped>
-.back-img{
-	width: 100%;
-}
 .info{
-	position: relative;
-	margin: auto;
+	padding:20rpx 0;
+	margin: 0 40rpx;
+	border-bottom: 2rpx solid #CCCCCC;
+	display: flex;
 }
 .info-img{
-	width: 300rpx;
-	height: 300rpx;
+	flex: 3;
+}
+.img-cell{
+	position: relative;
+	width:140rpx;
+	height: 140rpx;
 	border-radius: 50%;
 	overflow: hidden;
-	position: absolute;
-	margin: auto;
-	left: 50%;
-	transform: translate(-150rpx,-54%);
 }
 .cell1{
 	position: absolute;
 	width: 100%;
 	height: 100%;
 }
-.cell2{
-	padding-top: 150rpx;
-	font-size: 44rpx;
-	text-align: center;
+.info-name{
+	font-size: 40rpx;
+	color: #666666;
 }
-.cell3{
-	text-align: center;
+.info-message{
+	flex: 10;
+	padding: 0 20rpx;
+}
+.info-person{
+	display: grid;
+	grid-template-columns: repeat(3,33.3%);
+}
+.cell2>>>view:nth-child(1){
+	font-size: 40rpx;
+	color: #666666;
+	font-weight: bold;
 }
 .list{
-	border: 2rpx solid #CCCCCC;
+	/* border: 2rpx solid #CCCCCC; */
 	border-radius: 10rpx;
-	margin: 20rpx  80rpx;
+	margin: 20rpx  0;
 }
 .list-cell{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding:10rpx 20rpx;
-	border-top: 2rpx solid #CCCCCC;
-}
-.list-cell:nth-child(1){
-	border-top: 0rpx ;
+	padding:0 40rpx;
 }
 .list .list-cell:active{
 	background-color: #F7F7F7;
@@ -94,5 +112,7 @@
 .iconright,.cell-name{
 	font-size: 36rpx;
 	line-height: 2;
+	display: flex;
+	align-items: center;
 }
 </style>

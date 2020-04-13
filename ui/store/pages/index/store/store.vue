@@ -66,6 +66,13 @@
 	.name{
 		font-size: 44rpx;
 		font-weight: 500;
+		border: 2rpx solid #FFFFFF;
+		/* border-bottom-right-radius: 50%;
+		border-top-left-radius: 50%; */
+		background-color: #FFFFFF;
+		opacity: 0.85;
+		padding:0 40rpx;
+		border-radius: 100rpx;
 	}
 	.more{
 		font-size: 30rpx;

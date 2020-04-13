@@ -29,7 +29,7 @@
 	}
 </script>
 
-<style>
+<style scoped>
 @keyframes show{
 	from{
 		height: 590rpx;

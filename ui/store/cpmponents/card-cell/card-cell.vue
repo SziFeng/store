@@ -9,7 +9,7 @@
 				<text>新</text>
 			</view>
 		</view>
-		<view class="text-cell">
+		<view class="text-cell" v-if="details">
 			<view class="txt1"><text>阿迪达斯</text></view>
 			<view class="txt2"><text>女士黑色外套</text></view>
 			<view class="txt3"><text>￥499.99</text></view>
@@ -27,6 +27,10 @@
 			point2:{
 				type:Boolean,
 				default:false
+			},
+			details:{
+				type:Boolean,
+				default:true
 			}
 		},
 		data(){
@@ -37,7 +41,7 @@
 	}
 </script>
 
-<style>
+<style scoped>
 	.card-cell{
 		margin: 20rpx;
 		text-align: center;

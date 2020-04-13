@@ -1,5 +1,5 @@
 
-.content {
+.content.data-v-3ad4edb5 {
 		display: -webkit-box;
 		display: -webkit-flex;
 		display: flex;
@@ -14,7 +14,7 @@
 		-webkit-justify-content: center;
 		        justify-content: center;
 }
-.bot-bar{
+.bot-bar.data-v-3ad4edb5{
 		display: -webkit-box;
 		display: -webkit-flex;
 		display: flex;
@@ -34,16 +34,16 @@
 		padding-bottom: 6rpx;
 		box-shadow: 0 0 20rpx rgba(0,0,0,0.1);
 }
-.tab-icon{
+.tab-icon.data-v-3ad4edb5{
 		padding: 0 30rpx 0 ;
 		margin: 0 10rpx;
         color: rgba(0,0,0,0.3);
 }
-.setect-tab{
+.setect-tab.data-v-3ad4edb5{
 		color: #5f4534 !important;
 		border-bottom: 6rpx solid #5f4534;
 }
-.wrapper{
+.wrapper.data-v-3ad4edb5{
 		padding-bottom: 110rpx;
 }
 
