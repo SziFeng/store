@@ -1,6 +1,18 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
+			"path" : "pages/address/address",
+		    "style" : {
+				"navigationBarTitleText":"收货地址"
+			}
+		},
+		{
+		    "path" : "pages/buildAddress/buildAddress",
+		    "style" : {
+				"navigationBarTitleText":"新增地址"
+			}
+		},
+		{
 			"path": "pages/index/index",
 			"style": {
 				"navigationBarTitleText": "商城"
@@ -24,14 +36,15 @@
 		// 		"navigationBarTitleText": "我的"
 		// 	}
 		// }
-		// ,{
-		// 	"path" : "pages/shopcar/test/test",
-		// 	"style" : {}
-		// }
   //       ,{
   //           "path" : "pages/store/store",
   //           "style" : {}
   //       }
+        ,{
+            "path" : "pages/details/details",
+            "style" : {}
+        }
+        
     ],
 	// "tabBar": {
 	// 	"list": 
@@ -55,5 +68,6 @@
 		"navigationBarTitleText": "商城",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
+		// "navigationStyle":"custom"
 	}
 }

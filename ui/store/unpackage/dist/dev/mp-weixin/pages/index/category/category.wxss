@@ -1,5 +1,5 @@
 
-.cont.data-v-2cd3f4d2{
+.cont.data-v-41561570{
 		position: absolute;
 		height: 100%;
 		width: 100%;
@@ -7,7 +7,7 @@
         display: -webkit-flex;
         display: flex;
 }
-.left-cell.data-v-2cd3f4d2{
+.left-cell.data-v-41561570{
 		height: 100%;
 		-webkit-box-flex: 2;
 		-webkit-flex: 2;
@@ -17,19 +17,19 @@
 		background-color: #F7F7F7;
 		opacity: 0.85;
 }
-.title-name.data-v-2cd3f4d2{
+.title-name.data-v-41561570{
 		height: 80rpx;
 		line-height: 80rpx;
 		font-size: 32rpx;
 }
-.right-cell.data-v-2cd3f4d2{
+.right-cell.data-v-41561570{
 		-webkit-box-flex: 8;
 		-webkit-flex: 8;
 		        flex: 8;
 		padding-bottom: 110rpx;
 		padding-top:10rpx ;
 }
-.list-name.data-v-2cd3f4d2{
+.list-name.data-v-41561570{
 		display: -webkit-box;
 		display: -webkit-flex;
 		display: flex;
@@ -46,16 +46,16 @@
 		margin:0 20rpx;
 		border-radius: 30rpx;
 }
-.card-list.data-v-2cd3f4d2{
+.card-list.data-v-41561570{
 		display: grid;
 		grid-template-columns: repeat(2,50%);
 		overflow: hidden;
 }
-.select.data-v-2cd3f4d2{
+.select.data-v-41561570{
 		background-color: #FFFFFF;
 		position: relative;
 }
-.select.data-v-2cd3f4d2::before{
+.select.data-v-41561570::before{
 		content: '';
 		position: absolute;
 		left: 0;
@@ -63,7 +63,7 @@
 		width: 6rpx;
 		background-color: #EA4D4F;
 }
-.text-cell.data-v-2cd3f4d2{
+.text-cell.data-v-41561570{
 		width: 80rpx;
 		padding: 0 20rpx;
 		text-align: center;

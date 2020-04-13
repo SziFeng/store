@@ -1,6 +1,6 @@
 <template>
 	<view>
-		test
+		
 	</view>
 </template>
 
@@ -10,9 +10,6 @@
 			return {
 				
 			}
-		},
-		onLoad(options) {
-			console.log('options', this.$getParams(options))
 		},
 		methods: {
 			

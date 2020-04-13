@@ -1,12 +1,12 @@
 
-.title.data-v-64b11256{
+.title.data-v-0b078174{
 	background-color: rgba(243, 236, 231, 0.85);
 	color: ##666666;
 	margin-top: 20rpx;
 	padding:0 20rpx;
 	opacity: 0.85;
 }
-.name.data-v-64b11256{
+.name.data-v-0b078174{
 	font-size: 44rpx;
 	font-weight: 500;
 	border: 2rpx solid #FFFFFF;
@@ -17,11 +17,11 @@
 	padding:0 40rpx;
 	border-radius: 100rpx;
 }
-.more.data-v-64b11256{
+.more.data-v-0b078174{
 	font-size: 30rpx;
 	font-weight: 500;
 }
-.card-list.data-v-64b11256{
+.card-list.data-v-0b078174{
 	display: grid;
 	grid-template-columns: repeat(2,50%);
 	overflow: hidden;

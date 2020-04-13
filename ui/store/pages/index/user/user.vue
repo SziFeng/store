@@ -51,7 +51,9 @@
 			}
 		},
 		methods: {
-			
+			goTo(path){
+				this.$push(path)
+			}
 		}
 	}
 </script>
