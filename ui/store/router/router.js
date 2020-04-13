@@ -1,3 +1,4 @@
 export default {
-	test: "/pages/shopcar/test/test",
+	test: "/pages/index/shopcar/test/test",
+	buildAddress:"/pages/buildAddress/buildAddress"
 }

@@ -1,0 +1,35 @@
+
+.container.data-v-726255d7{
+	position: absolute;
+	background-color: #F2F2F2;
+	height: 100%;
+	width: 100%;
+}
+.card-item.data-v-726255d7{
+	margin-top: 20rpx;
+	background-color: #FFFFFF;
+	padding: 20rpx 0;
+}
+.my-btn.data-v-726255d7{
+	position: fixed;
+	bottom: 20rpx;
+	width: 100%;
+	text-align: center;
+}
+.cell1.data-v-726255d7{
+	padding: 0 40rpx 10rpx;
+}
+.cell-address.data-v-726255d7{
+	color: #7f7f7f;
+}
+.cell2.data-v-726255d7{
+	border-top: 2rpx solid #f2f2f2;
+	padding:10rpx 40rpx 0;
+	color: #7f7f7f;
+}
+.iconedit.data-v-726255d7,.icondel.data-v-726255d7{
+	line-height: 1;
+	margin-left: 10rpx;
+	color: #7f7f7f;
+}
+

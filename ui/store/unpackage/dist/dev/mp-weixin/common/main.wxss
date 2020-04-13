@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'iconfont';  /* project id 1734311 */
-  src: url('//at.alicdn.com/t/font_1734311_zh7oxkp8yic.eot');
-  src: url('//at.alicdn.com/t/font_1734311_zh7oxkp8yic.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_1734311_zh7oxkp8yic.woff2') format('woff2'),
-  url('//at.alicdn.com/t/font_1734311_zh7oxkp8yic.woff') format('woff'),
-  url('//at.alicdn.com/t/font_1734311_zh7oxkp8yic.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_1734311_zh7oxkp8yic.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_1734311_5nujjsicqls.eot');
+  src: url('//at.alicdn.com/t/font_1734311_5nujjsicqls.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1734311_5nujjsicqls.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1734311_5nujjsicqls.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1734311_5nujjsicqls.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1734311_5nujjsicqls.svg#iconfont') format('svg');
 }
 .icon {
   width: 64rpx; height: 64rpx;
@@ -36,6 +36,10 @@
 .iconleftline:before {content: "\E605";}
 /* 装饰 */
 .iconrightline:before {content: "\ECEA";}
+/* 装饰 */
+.iconedit:before {content: "\E7FB";}
+/* 装饰 */
+.icondel:before {content: "\E60B";}
 /* 装饰 */
 /* 页面切换效果 */
 @keyframes fade-in {

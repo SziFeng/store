@@ -1,6 +1,9 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/address/address",
+    "pages/buildAddress/buildAddress",
+    "pages/index/index",
+    "pages/details/details"
   ],
   "subPackages": [],
   "window": {
@@ -14,6 +17,5 @@
       "desc": "个人开发"
     }
   },
-  "usingComponents": {},
-  "sitemapLocation": "sitemap1.json"
+  "usingComponents": {}
 }

@@ -15,7 +15,7 @@
 			</view>
 		</view>
 		<view class="list ">
-			<view class="list-cell myflex" v-for="(item,index) in list" :key="index">
+			<view class="list-cell myflex" v-for="(item,index) in list" :key="index" @click="goTo(item.path)">
 				<view class="cell-name">{{item.name}}</view>
 				<view class="cell-icon"><i class="iconfont iconright"></i></view>
 			</view>
@@ -28,16 +28,18 @@
 		data() {
 			return {
 				list:[
-					{name:'账户',path:''},
-					{name:'地址管理',path:''},
-					{name:'消息',path:''},
-					{name:'密码',path:''},
-					{name:'设置',path:''},
+					{name:'账户',path:'test'},
+					{name:'地址管理',path:'address'},
+					{name:'消息',path:'notes'},
+					{name:'密码',path:'password'},
+					{name:'设置',path:'setting'},
 				]
 			}
 		},
 		methods: {
-			
+			goTo(path){
+				this.$push(path)
+			}
 		}
 	}
 </script>
