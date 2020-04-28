@@ -737,7 +737,7 @@ function initData(vueOptions, context) {
     try {
       data = data.call(context); // 支持 Vue.prototype 上挂的数据
     } catch (e) {
-      if (Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);
       }
     }
@@ -1656,9 +1656,9 @@ function normalizeComponent (
 /***/ }),
 
 /***/ 15:
-/*!***************************************************************!*\
-  !*** C:/Users/ld2/IdeaProjects/store/ui/store/utils/index.js ***!
-  \***************************************************************/
+/*!****************************************************!*\
+  !*** E:/code/person/store/ui/store/utils/index.js ***!
+  \****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1694,23 +1694,24 @@ mytools;exports.default = _default;
 /***/ }),
 
 /***/ 16:
-/*!*****************************************************************!*\
-  !*** C:/Users/ld2/IdeaProjects/store/ui/store/router/router.js ***!
-  \*****************************************************************/
+/*!******************************************************!*\
+  !*** E:/code/person/store/ui/store/router/router.js ***!
+  \******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
   test: "/pages/index/shopcar/test/test",
-  buildAddress: "/pages/buildAddress/buildAddress" };exports.default = _default;
+  buildAddress: "/pages/buildAddress/buildAddress",
+  address: "/pages/address/address" };exports.default = _default;
 
 /***/ }),
 
 /***/ 17:
-/*!****************************************************************!*\
-  !*** C:/Users/ld2/IdeaProjects/store/ui/store/utils/swiper.js ***!
-  \****************************************************************/
+/*!*****************************************************!*\
+  !*** E:/code/person/store/ui/store/utils/swiper.js ***!
+  \*****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -7365,7 +7366,7 @@ function type(obj) {
 
 function flushCallbacks$1(vm) {
     if (vm.__next_tick_callbacks && vm.__next_tick_callbacks.length) {
-        if (Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+        if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:flushCallbacks[' + vm.__next_tick_callbacks.length + ']');
@@ -7386,14 +7387,14 @@ function nextTick$1(vm, cb) {
     //1.nextTick 之前 已 setData 且 setData 还未回调完成
     //2.nextTick 之前存在 render watcher
     if (!vm.__next_tick_pending && !hasRenderWatcher(vm)) {
-        if(Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:nextVueTick');
         }
         return nextTick(cb, vm)
     }else{
-        if(Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance$1 = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance$1.is || mpInstance$1.route) + '][' + vm._uid +
                 ']:nextMPTick');
@@ -7469,7 +7470,7 @@ var patch = function(oldVnode, vnode) {
     });
     var diffData = diff(data, mpData);
     if (Object.keys(diffData).length) {
-      if (Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + this._uid +
           ']差量更新',
           JSON.stringify(diffData));
@@ -7896,72 +7897,14 @@ module.exports = g;
 /***/ }),
 
 /***/ 4:
-/*!***********************************************************!*\
-  !*** C:/Users/ld2/IdeaProjects/store/ui/store/pages.json ***!
-  \***********************************************************/
+/*!************************************************!*\
+  !*** E:/code/person/store/ui/store/pages.json ***!
+  \************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-
-/***/ }),
-
-/***/ 43:
-/*!**********************************************************************!*\
-  !*** C:/Users/ld2/IdeaProjects/store/ui/store/common/image/img1.jpg ***!
-  \**********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/img/img1.4ea28346.jpg";
-
-/***/ }),
-
-<<<<<<< HEAD
-/***/ 39:
-/*!***********************************************************!*\
-  !*** E:/code/person/store/ui/store/common/image/img4.jpg ***!
-  \***********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/img/img4.1c6ff022.jpg";
-
-/***/ }),
-
-/***/ 4:
-/*!************************************************!*\
-  !*** E:/code/person/store/ui/store/pages.json ***!
-  \************************************************/
-=======
-/***/ 44:
-/*!**********************************************************************!*\
-  !*** C:/Users/ld2/IdeaProjects/store/ui/store/common/image/img2.jpg ***!
-  \**********************************************************************/
->>>>>>> a9f0261e53ba19f3111b06f171b682be0a2f498a
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/img/img2.82ac960b.jpg";
-
-/***/ }),
-
-<<<<<<< HEAD
-/***/ 47:
-/*!***********************************************************!*\
-  !*** E:/code/person/store/ui/store/common/image/img6.jpg ***!
-  \***********************************************************/
-=======
-/***/ 45:
-/*!**********************************************************************!*\
-  !*** C:/Users/ld2/IdeaProjects/store/ui/store/common/image/img3.jpg ***!
-  \**********************************************************************/
->>>>>>> a9f0261e53ba19f3111b06f171b682be0a2f498a
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/img/img3.82ac960b.jpg";
 
 /***/ }),
 
@@ -8852,14 +8795,36 @@ main();
 
 /***/ }),
 
-/***/ 56:
-/*!**********************************************************************!*\
-  !*** C:/Users/ld2/IdeaProjects/store/ui/store/common/image/img6.jpg ***!
-  \**********************************************************************/
+/***/ 53:
+/*!***********************************************************!*\
+  !*** E:/code/person/store/ui/store/common/image/img1.jpg ***!
+  \***********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/img/img6.93045b5b.jpg";
+module.exports = __webpack_require__.p + "static/img/img1.4ea28346.jpg";
+
+/***/ }),
+
+/***/ 54:
+/*!***********************************************************!*\
+  !*** E:/code/person/store/ui/store/common/image/img2.jpg ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/img/img2.82ac960b.jpg";
+
+/***/ }),
+
+/***/ 55:
+/*!***********************************************************!*\
+  !*** E:/code/person/store/ui/store/common/image/img3.jpg ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/img/img3.82ac960b.jpg";
 
 /***/ }),
 
@@ -8874,28 +8839,10 @@ module.exports = {"_from":"@dcloudio/uni-stat@alpha","_id":"@dcloudio/uni-stat@2
 
 /***/ }),
 
-/***/ 7:
-<<<<<<< HEAD
-/*!*****************************************************************!*\
-  !*** E:/code/person/store/ui/store/pages.json?{"type":"style"} ***!
-  \*****************************************************************/
-=======
-/*!****************************************************************************!*\
-  !*** C:/Users/ld2/IdeaProjects/store/ui/store/pages.json?{"type":"style"} ***!
-  \****************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/buildAddress/buildAddress": { "navigationBarTitleText": "新增地址", "usingComponents": {}, "usingAutoImportComponents": {} }, "pages/index/index": { "navigationBarTitleText": "商城", "usingComponents": { "store": "/pages/index/store/store", "category": "/pages/index/category/category", "shop-car": "/pages/index/shopcar/shopcar", "user": "/pages/index/user/user" }, "usingAutoImportComponents": {} }, "pages/details/details": { "usingComponents": {}, "usingAutoImportComponents": {} }, "pages/address/address": { "navigationBarTitleText": "收货地址", "usingComponents": {}, "usingAutoImportComponents": {} } }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "商城", "navigationBarBackgroundColor": "#F8F8F8", "backgroundColor": "#F8F8F8" } };exports.default = _default;
-
-/***/ }),
-
-/***/ 78:
-/*!**********************************************************************!*\
-  !*** C:/Users/ld2/IdeaProjects/store/ui/store/common/image/img4.jpg ***!
-  \**********************************************************************/
->>>>>>> a9f0261e53ba19f3111b06f171b682be0a2f498a
+/***/ 61:
+/*!***********************************************************!*\
+  !*** E:/code/person/store/ui/store/common/image/img4.jpg ***!
+  \***********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8903,17 +8850,33 @@ module.exports = __webpack_require__.p + "static/img/img4.1c6ff022.jpg";
 
 /***/ }),
 
-<<<<<<< HEAD
-/***/ 76:
+/***/ 69:
 /*!***********************************************************!*\
-  !*** E:/code/person/store/ui/store/common/image/img5.jpg ***!
+  !*** E:/code/person/store/ui/store/common/image/img6.jpg ***!
   \***********************************************************/
-=======
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/img/img6.93045b5b.jpg";
+
+/***/ }),
+
+/***/ 7:
+/*!*****************************************************************!*\
+  !*** E:/code/person/store/ui/store/pages.json?{"type":"style"} ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/index/index": { "navigationBarTitleText": "商城", "usingComponents": { "store": "/pages/index/store/store", "category": "/pages/index/category/category", "shop-car": "/pages/index/shopcar/shopcar", "user": "/pages/index/user/user" }, "usingAutoImportComponents": {} }, "pages/address/address": { "navigationBarTitleText": "收货地址", "usingComponents": {}, "usingAutoImportComponents": {} }, "pages/buildAddress/buildAddress": { "navigationBarTitleText": "新增地址", "usingComponents": {}, "usingAutoImportComponents": {} }, "pages/details/details": { "usingComponents": {}, "usingAutoImportComponents": {} } }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "商城", "navigationBarBackgroundColor": "#F8F8F8", "backgroundColor": "#F8F8F8" } };exports.default = _default;
+
+/***/ }),
+
 /***/ 8:
-/*!***************************************************************************!*\
-  !*** C:/Users/ld2/IdeaProjects/store/ui/store/pages.json?{"type":"stat"} ***!
-  \***************************************************************************/
->>>>>>> a9f0261e53ba19f3111b06f171b682be0a2f498a
+/*!****************************************************************!*\
+  !*** E:/code/person/store/ui/store/pages.json?{"type":"stat"} ***!
+  \****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8922,10 +8885,10 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 
-/***/ 86:
-/*!**********************************************************************!*\
-  !*** C:/Users/ld2/IdeaProjects/store/ui/store/common/image/img5.jpg ***!
-  \**********************************************************************/
+/***/ 98:
+/*!***********************************************************!*\
+  !*** E:/code/person/store/ui/store/common/image/img5.jpg ***!
+  \***********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 

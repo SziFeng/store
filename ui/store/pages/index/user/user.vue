@@ -26,7 +26,7 @@
 			</view>
 		</view>
 		<view class="list ">
-			<view class="list-cell myflex" v-for="(item,index) in list" :key="index">
+			<view class="list-cell myflex" v-for="(item,index) in list" :key="index" @click="goTo(item.path)">
 				<view class="cell-name">
 					<i  class="iconfont" :class="item.icon" ></i>
 					<text>{{item.name}}</text>
@@ -42,11 +42,11 @@
 		data() {
 			return {
 				list:[
-					{name:'我的订单',icon:'iconorder',path:''},
-					{name:'地址管理',icon:'iconaddress',path:''},
-					{name:'消息',icon:'iconmessage',path:''},
-					{name:'密码',icon:'iconkeys',path:''},
-					{name:'设置',icon:'iconsetting',path:''},
+					{name:'我的订单',icon:'iconorder',path:'order'},
+					{name:'地址管理',icon:'iconaddress',path:'address'},
+					{name:'消息',icon:'iconmessage',path:'notes'},
+					{name:'密码',icon:'iconkeys',path:'password'},
+					{name:'设置',icon:'iconsetting',path:'setting'},
 				]
 			}
 		},

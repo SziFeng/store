@@ -1,40 +1,40 @@
 
-.container.data-v-2c0a01ed{
+.container.data-v-2f8d90cf{
 	position: absolute;
 	height: 100%;
 	width: 100%;
 	border-top: 2rpx solid #F2F2F2;
 	background-color: #F2F2F2;
 }
-.swiper-card.data-v-2c0a01ed{
+.swiper-card.data-v-2f8d90cf{
 	background-color: #fff;
 }
-.list-item.data-v-2c0a01ed{
+.list-item.data-v-2f8d90cf{
 	padding: 20rpx 20rpx 20rpx 0;
 	margin-left: 40rpx;
 	border-bottom: 2rpx solid #F2F2F2;
 	background-color: #FFFFFF
 }
-.list-item.data-v-2c0a01ed:nth-last-child(1){
+.list-item.data-v-2f8d90cf:nth-last-child(1){
 	border-bottom: 0rpx;
 }
-.item-name.data-v-2c0a01ed{
+.item-name.data-v-2f8d90cf{
 	font-size: 32rpx;
 	-webkit-box-flex: 2;
 	-webkit-flex: 2;
 	        flex: 2;
 }
-.item-input.data-v-2c0a01ed{
+.item-input.data-v-2f8d90cf{
 	-webkit-box-flex: 7;
 	-webkit-flex: 7;
 	        flex: 7;
 }
-.default-tab.data-v-2c0a01ed{
+.default-tab.data-v-2f8d90cf{
 	margin-top: 20rpx;
 	padding: 20rpx 40rpx;
 	background-color: #FFFFFF;
 }
-.my-btn.data-v-2c0a01ed{
+.my-btn.data-v-2f8d90cf{
 	position: fixed;
 	bottom: 20rpx;
 	width: 100%;

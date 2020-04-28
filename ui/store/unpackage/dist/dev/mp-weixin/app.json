@@ -1,8 +1,8 @@
 {
   "pages": [
+    "pages/index/index",
     "pages/address/address",
     "pages/buildAddress/buildAddress",
-    "pages/index/index",
     "pages/details/details"
   ],
   "subPackages": [],
@@ -17,10 +17,6 @@
       "desc": "个人开发"
     }
   },
-<<<<<<< HEAD
   "usingComponents": {},
-  "sitemapLocation": "sitemap93.json"
-=======
-  "usingComponents": {}
->>>>>>> a9f0261e53ba19f3111b06f171b682be0a2f498a
+  "sitemapLocation": "sitemap67.json"
 }

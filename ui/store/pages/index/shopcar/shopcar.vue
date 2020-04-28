@@ -1,6 +1,6 @@
 <template>
 	<view class="swiper">
-		<view class="myflex" v-for="item in 6" :key="item">
+		<view class="myflex" v-for="item in 3" :key="item">
 			<view class="check-box">
 				<checkbox  :checked="false" color="#EA4D4F"/>
 			</view>
@@ -22,10 +22,8 @@
 		</view>
 		<view class="car-cell myflex">
 			<view class="myflex cells">
-				<view class=""><checkbox  :checked="false" color="#EA4D4F"/>全选</view>
-				<view class="">
-					合计：1900元
-				</view>
+				<view class="check-cell"><checkbox  :checked="false" color="#EA4D4F"/>全选</view>
+				<view class="total-cell">合计：1900元</view>
 				<view class="btn-cell">去结算(0)</view>
 			</view>
 		</view>
@@ -52,7 +50,7 @@
 
 <style scoped>
 .swiper{
-	padding-bottom: 100rpx;
+	padding-bottom: 120rpx;
 }
 .title-cell{
 	padding: 10rpx 20rpx;
@@ -106,17 +104,20 @@
 	bottom: 100rpx;
 	left: 0;
 	width: 100%;
-	height: 100rpx;
+	height: 120rpx;
 	background-color: rgba(255, 255, 255, 0.85);
 }
 .cells{
 	width: 100%;
 	padding: 0 40rpx;
 }
+.total-cell{
+	font-size: 32rpx;
+}
 .btn-cell{
 	background-color: #EA4D4F;
 	border-radius: 100rpx;
-	padding:0 20rpx;
+	padding:6rpx 20rpx;
 	color: #FFFFFF;
 	font-size: 36rpx;
 }
