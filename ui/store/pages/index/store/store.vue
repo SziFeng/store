@@ -2,14 +2,14 @@
 	<view >
 		<my-swiper :imgList="imgList"></my-swiper>
 		<menu-list :show="show"></menu-list>
-		<view class=""  v-for="item in proList" :key="item.id">
+		<view class=""  v-for="item in proList" :key="item.id" @click="goTo">
 			<view class="title myflex">
 				<view class="name">{{item.name}}</view>
 				<view class="more"><i  class="iconfont iconmore" ></i></view>
 			</view>
 			<view class="card-list">
-				<block v-for="(res) in 4" :key="res">
-					<card-cell :point1="true" :point2="true"></card-cell>
+				<block v-for="(res) in 4" :key="res" >
+					<card-cell :point1="true" :point2="true" ></card-cell>
 				</block>
 			</view>
 		</view>
@@ -50,6 +50,9 @@
 			},
 			showUp(){
 				this.show=false
+			},
+			goTo(){
+				this.$push('details')
 			}
 		}
 	}

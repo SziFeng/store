@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/address/address",
     "pages/buildAddress/buildAddress",
-    "pages/details/details"
+    "pages/details/details",
+    "pages/order/order"
   ],
   "subPackages": [],
   "window": {
@@ -17,6 +18,5 @@
       "desc": "个人开发"
     }
   },
-  "usingComponents": {},
-  "sitemapLocation": "sitemap67.json"
+  "usingComponents": {}
 }

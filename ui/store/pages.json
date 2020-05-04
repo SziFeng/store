@@ -42,9 +42,17 @@
   //       }
         ,{
             "path" : "pages/details/details",
-            "style" : {}
+		    "style" : {
+				"navigationBarTitleText":"商品详情"
+			}
         }
         
+        ,{
+            "path" : "pages/order/order",
+		    "style" : {
+				"navigationBarTitleText":"下单"
+			}
+        }
     ],
 	// "tabBar": {
 	// 	"list": 

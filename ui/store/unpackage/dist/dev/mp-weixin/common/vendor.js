@@ -1704,7 +1704,9 @@ mytools;exports.default = _default;
 Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
   test: "/pages/index/shopcar/test/test",
   buildAddress: "/pages/buildAddress/buildAddress",
-  address: "/pages/address/address" };exports.default = _default;
+  address: "/pages/address/address",
+  details: "/pages/details/details",
+  order: "/pages/order/order" };exports.default = _default;
 
 /***/ }),
 
@@ -7908,6 +7910,28 @@ module.exports = g;
 
 /***/ }),
 
+/***/ 48:
+/*!***********************************************************!*\
+  !*** E:/code/person/store/ui/store/common/image/img1.jpg ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/img/img1.4ea28346.jpg";
+
+/***/ }),
+
+/***/ 49:
+/*!***********************************************************!*\
+  !*** E:/code/person/store/ui/store/common/image/img2.jpg ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/img/img2.82ac960b.jpg";
+
+/***/ }),
+
 /***/ 5:
 /*!*******************************************************!*\
   !*** ./node_modules/@dcloudio/uni-stat/dist/index.js ***!
@@ -8795,29 +8819,7 @@ main();
 
 /***/ }),
 
-/***/ 53:
-/*!***********************************************************!*\
-  !*** E:/code/person/store/ui/store/common/image/img1.jpg ***!
-  \***********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/img/img1.4ea28346.jpg";
-
-/***/ }),
-
-/***/ 54:
-/*!***********************************************************!*\
-  !*** E:/code/person/store/ui/store/common/image/img2.jpg ***!
-  \***********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/img/img2.82ac960b.jpg";
-
-/***/ }),
-
-/***/ 55:
+/***/ 50:
 /*!***********************************************************!*\
   !*** E:/code/person/store/ui/store/common/image/img3.jpg ***!
   \***********************************************************/
@@ -8869,7 +8871,7 @@ module.exports = __webpack_require__.p + "static/img/img6.93045b5b.jpg";
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/index/index": { "navigationBarTitleText": "商城", "usingComponents": { "store": "/pages/index/store/store", "category": "/pages/index/category/category", "shop-car": "/pages/index/shopcar/shopcar", "user": "/pages/index/user/user" }, "usingAutoImportComponents": {} }, "pages/address/address": { "navigationBarTitleText": "收货地址", "usingComponents": {}, "usingAutoImportComponents": {} }, "pages/buildAddress/buildAddress": { "navigationBarTitleText": "新增地址", "usingComponents": {}, "usingAutoImportComponents": {} }, "pages/details/details": { "usingComponents": {}, "usingAutoImportComponents": {} } }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "商城", "navigationBarBackgroundColor": "#F8F8F8", "backgroundColor": "#F8F8F8" } };exports.default = _default;
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/index/index": { "navigationBarTitleText": "商城", "usingComponents": { "store": "/pages/index/store/store", "category": "/pages/index/category/category", "shop-car": "/pages/index/shopcar/shopcar", "user": "/pages/index/user/user" }, "usingAutoImportComponents": {} }, "pages/address/address": { "navigationBarTitleText": "收货地址", "usingComponents": {}, "usingAutoImportComponents": {} }, "pages/buildAddress/buildAddress": { "navigationBarTitleText": "新增地址", "usingComponents": {}, "usingAutoImportComponents": {} }, "pages/details/details": { "navigationBarTitleText": "商品详情", "usingComponents": { "my-swiper": "/cpmponents/my-swiper/my-swiper" }, "usingAutoImportComponents": {} }, "pages/order/order": { "navigationBarTitleText": "下单", "usingComponents": {}, "usingAutoImportComponents": {} } }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "商城", "navigationBarBackgroundColor": "#F8F8F8", "backgroundColor": "#F8F8F8" } };exports.default = _default;
 
 /***/ }),
 

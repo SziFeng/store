@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'iconfont';  /* project id 1734311 */
-  src: url('//at.alicdn.com/t/font_1734311_5nujjsicqls.eot');
-  src: url('//at.alicdn.com/t/font_1734311_5nujjsicqls.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_1734311_5nujjsicqls.woff2') format('woff2'),
-  url('//at.alicdn.com/t/font_1734311_5nujjsicqls.woff') format('woff'),
-  url('//at.alicdn.com/t/font_1734311_5nujjsicqls.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_1734311_5nujjsicqls.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_1734311_12igv4ip68x.eot');
+  src: url('//at.alicdn.com/t/font_1734311_12igv4ip68x.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1734311_12igv4ip68x.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1734311_12igv4ip68x.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1734311_12igv4ip68x.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1734311_12igv4ip68x.svg#iconfont') format('svg');
 }
 .icon {
   width: 64rpx; height: 64rpx;
@@ -39,19 +39,23 @@
 /* 装饰 */
 /* 我的图标 */
 .iconsetting:before {content: "\E64B";}
-/* 装饰 */
+/* 设置 */
 .iconaddress:before {content: "\E64E";}
-/* 装饰 */
+/* 地址 */
 .iconkeys:before {content: "\E652";}
-/* 装饰 */
+/* 锁*/
 .iconorder:before {content: "\E655";}
-/* 装饰 */
+/* 订单 */
 .iconmessage:before {content: "\E657";}
-/* 装饰 */
+/* 信息 */
 .iconedit:before {content: "\E7FB";}
-/* 装饰 */
+/* 编辑 */
 .icondel:before {content: "\E60B";}
-/* 装饰 */
+/* 删除*/
+.iconcar:before {content: "\E63F";}
+/* 购物车*/
+.iconhome:before {content: "\E64F";}
+/* 首页*/
 /* 页面切换效果 */
 @keyframes fade-in {
 0% {opacity: 0;}/*初始状态 透明度为0*/

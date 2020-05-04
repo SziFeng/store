@@ -50,7 +50,7 @@
 
 <style scoped>
 .swiper{
-	padding-bottom: 120rpx;
+	padding-bottom: 130rpx;
 }
 .title-cell{
 	padding: 10rpx 20rpx;
@@ -101,11 +101,14 @@
 }
 .car-cell{
 	position: fixed;
-	bottom: 100rpx;
-	left: 0;
-	width: 100%;
+	bottom: 120rpx;
+	left: 3%;
+	width: 94%;
 	height: 120rpx;
+	/* background-color: #007AFF; */
 	background-color: rgba(255, 255, 255, 0.85);
+	border-radius: 30rpx;
+	box-shadow: 0px 0rpx 20rpx #D9D9D9;
 }
 .cells{
 	width: 100%;

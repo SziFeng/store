@@ -142,15 +142,21 @@ var _default2 =
       type: Array,
       default: function _default() {
         return [];
-      } } },
+      } },
 
+    margin: {
+      type: Boolean,
+      default: true },
+
+    indicatorDots: {
+      type: Boolean,
+      default: true } },
 
 
   data: function data() {
     return {
-      indicatorDots: true,
       autoplay: true,
-      interval: 2000,
+      interval: 5000,
       duration: 500 };
 
   },
