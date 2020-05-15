@@ -1,0 +1,88 @@
+@charset "UTF-8";
+/* 页面左右间距 */
+/* 文字尺寸 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 行为相关颜色 */
+.ware .title-item {
+  padding: 10rpx 20rpx;
+  -webkit-box-shadow: 0 0 20rpx #EBEEF5;
+          box-shadow: 0 0 20rpx #EBEEF5;
+}
+.ware .title-item .name-cell {
+  -webkit-box-flex: 7;
+  -webkit-flex: 7;
+          flex: 7;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  border-right: 4rpx solid #666666;
+  line-height: 1;
+}
+.ware .title-item .name-cell .iconup {
+  line-height: 1;
+}
+.ware .title-item .icon-cell {
+  -webkit-box-flex: 4;
+  -webkit-flex: 4;
+          flex: 4;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+.ware .title-item .icon-cell .iconlist {
+  line-height: 1;
+}
+.ware .swiper-content {
+  position: absolute;
+  width: 100%;
+  top: 90rpx;
+  bottom: 0;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.ware .swiper-content .card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  padding: 0 10rpx;
+}
+.ware .swiper-content .card-container .card-cell {
+  padding: 10rpx;
+}
+.ware .swiper-content .card-container .card-cell .img-cell {
+  position: relative;
+  width: 100%;
+  height: 300rpx;
+}
+.ware .swiper-content .card-container .card-cell .img-cell image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20rpx;
+}
+.ware .swiper-content .card-container .card-cell .txt-cell {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ware .swiper-content .card-container .card-cell .info-cell .price {
+  color: #fa436a;
+  font-size: 38.4rpx;
+}
+.ware .swiper-content .card-container .card-cell .info-cell .sale {
+  color: #909399;
+}
+

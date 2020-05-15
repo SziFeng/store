@@ -1,4 +1,6 @@
 {
   "navigationBarTitleText": "下单",
-  "usingComponents": {}
+  "usingComponents": {
+    "list-item": "/cpmponents/list-item"
+  }
 }

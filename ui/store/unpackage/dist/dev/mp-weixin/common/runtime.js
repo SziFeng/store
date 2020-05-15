@@ -104,11 +104,11 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"pages/index/shopcar/shopcar":1,"pages/index/store/store":1,"pages/index/user/user":1,"pages/index/category/category":1,"cpmponents/my-swiper/my-swiper":1,"cpmponents/card-cell/card-cell":1,"cpmponents/menu-list/menu-list":1};
+/******/ 		var cssChunks = {"pages/index/shopcar/shopcar":1,"pages/index/store/store":1,"pages/index/user/user":1,"pages/index/category/category":1,"cpmponents/my-swiper/my-swiper":1,"cpmponents/list-item":1,"cpmponents/card-cell/card-cell":1,"cpmponents/menu-list/menu-list":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "" + ({"pages/index/shopcar/shopcar":"pages/index/shopcar/shopcar","pages/index/store/store":"pages/index/store/store","pages/index/user/user":"pages/index/user/user","pages/index/category/category":"pages/index/category/category","cpmponents/my-swiper/my-swiper":"cpmponents/my-swiper/my-swiper","cpmponents/card-cell/card-cell":"cpmponents/card-cell/card-cell","cpmponents/menu-list/menu-list":"cpmponents/menu-list/menu-list"}[chunkId]||chunkId) + ".wxss";
+/******/ 				var href = "" + ({"pages/index/shopcar/shopcar":"pages/index/shopcar/shopcar","pages/index/store/store":"pages/index/store/store","pages/index/user/user":"pages/index/user/user","pages/index/category/category":"pages/index/category/category","cpmponents/my-swiper/my-swiper":"cpmponents/my-swiper/my-swiper","cpmponents/list-item":"cpmponents/list-item","cpmponents/card-cell/card-cell":"cpmponents/card-cell/card-cell","cpmponents/menu-list/menu-list":"cpmponents/menu-list/menu-list"}[chunkId]||chunkId) + ".wxss";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {
@@ -129,6 +129,7 @@
 /******/ 				linkTag.onerror = function(event) {
 /******/ 					var request = event && event.target && event.target.src || fullhref;
 /******/ 					var err = new Error("Loading CSS chunk " + chunkId + " failed.\n(" + request + ")");
+/******/ 					err.code = "CSS_CHUNK_LOAD_FAILED";
 /******/ 					err.request = request;
 /******/ 					delete installedCssChunks[chunkId]
 /******/ 					linkTag.parentNode.removeChild(linkTag)

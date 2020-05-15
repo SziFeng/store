@@ -3,7 +3,8 @@
 	margin: 20rpx;
 	text-align: center;
 	border-radius: 30rpx;
-	box-shadow: 4rpx 4rpx 10rpx #CCCCCC;
+	-webkit-box-shadow: 4rpx 4rpx 10rpx #CCCCCC;
+	        box-shadow: 4rpx 4rpx 10rpx #CCCCCC;
 }
 .img-cell.data-v-b62fa148{
 	position: relative;

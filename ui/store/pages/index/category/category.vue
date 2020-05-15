@@ -10,8 +10,8 @@
 				<view v-for="(item,index) in titleList" :key="index"  :id="'main-'+index">
 					<view class="list-name"><i class="iconfont iconleftline"></i><text class="text-cell">{{item.name}}</text><i class="iconfont iconrightline"></i></view>
 					<view  class="card-list" >
-					<block v-for="res in item.chiddren" :key="res">
-						<card-cell></card-cell>
+					<block v-for="res in item.chiddren" :key="res" >
+						<card-cell @goTo="goTo"></card-cell>
 					</block>
 					</view>
 				</view>
@@ -44,6 +44,9 @@
 		onShow() {
 		},
 		methods: {
+			goTo(){
+				this.$push('ware')
+			},
 			//一级分类点击
 			change(val,ind){
 				if(!this.sizeCalcState){

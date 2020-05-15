@@ -32,7 +32,8 @@
 		/* background-color: rgba(234, 234, 234, 0.7); */
 		background-color: rgba(255, 255, 255, 0.85);
 		padding-bottom: 6rpx;
-		box-shadow: 0 0 20rpx rgba(0,0,0,0.1);
+		-webkit-box-shadow: 0 0 20rpx rgba(0,0,0,0.1);
+		        box-shadow: 0 0 20rpx rgba(0,0,0,0.1);
 }
 .tab-icon.data-v-3ad4edb5{
 		padding: 0 30rpx 0 ;

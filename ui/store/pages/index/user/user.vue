@@ -42,7 +42,7 @@
 		data() {
 			return {
 				list:[
-					{name:'我的订单',icon:'iconorder',path:'order'},
+					{name:'我的订单',icon:'iconorder',path:'records'},
 					{name:'地址管理',icon:'iconaddress',path:'address'},
 					{name:'消息',icon:'iconmessage',path:'notes'},
 					{name:'密码',icon:'iconkeys',path:'password'},

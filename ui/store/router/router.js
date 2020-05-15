@@ -3,5 +3,7 @@ export default {
 	buildAddress:"/pages/buildAddress/buildAddress",
 	address:"/pages/address/address",
 	details:"/pages/details/details",
-	order:"/pages/order/order"
+	order:"/pages/order/order",
+	records:"/pages/records/records",
+	ware:"/pages/ware/ware"
 }

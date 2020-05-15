@@ -1,5 +1,5 @@
 <template>
-	<view class="card-cell" >
+	<view class="card-cell" @click="goTo">
 		<view class="img-cell">
 			<image class="card-img" :src="require('../../common/image/img5.jpg')" mode="aspectFill"></image>
 			<view class="img-element1 element" @click="xin=!xin" v-if="point1">
@@ -36,6 +36,11 @@
 		data(){
 			return{
 				xin:false
+			}
+		},
+		methods:{
+			goTo(){
+				this.$emit('goTo')
 			}
 		}
 	}

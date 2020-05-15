@@ -67,7 +67,7 @@
 		opacity: 0.85;
 	}
 	.name{
-		font-size: 44rpx;
+		font-size: $font-lg;
 		font-weight: 500;
 		border: 2rpx solid #FFFFFF;
 		/* border-bottom-right-radius: 50%;

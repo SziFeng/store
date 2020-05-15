@@ -8,7 +8,8 @@
 	/* height: 500rpx; */
 	height: 255rpx;
 	padding: 0rpx 20rpx;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	position: relative;
 }
 .item-img.data-v-eeefcf60 {

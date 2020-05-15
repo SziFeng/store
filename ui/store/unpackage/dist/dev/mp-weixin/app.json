@@ -4,7 +4,9 @@
     "pages/address/address",
     "pages/buildAddress/buildAddress",
     "pages/details/details",
-    "pages/order/order"
+    "pages/order/order",
+    "pages/records/records",
+    "pages/ware/ware"
   ],
   "subPackages": [],
   "window": {

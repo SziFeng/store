@@ -255,26 +255,27 @@
 				.ixon-cell{
 					text-align: center;
 					.iconhongxin{
-						font-size: 50rpx;
+						font-size: 42rpx;
 						line-height: 1;
 						color: #EA4D4F;
 					}
 					.iconkongxin{
-						font-size: 50rpx;
+						font-size: 42rpx;
 						line-height: 1;
 					}
 					.iconcar,.iconhome{
-						font-size: 60rpx;
+						font-size: 48rpx;
 						line-height: 1;
 					}
 				}
 				.txt-cell{
 					flex: 5;
+					line-height: 1;
 				}
 			}
 		}
 		.btn-item{
-			background-color: #1AAD19;
+			background-color: #ea4d4f;
 			border-radius: 100px;
 			padding: 10rpx;
 			line-height: 2;
@@ -282,7 +283,7 @@
 			.btn-cell{
 				color: #FFFFFF;
 				padding:0 10rpx;
-				font-size: 36rpx;
+				font-size: $font-lg;
 				.cell-center{
 					padding: 0 6px;
 				}

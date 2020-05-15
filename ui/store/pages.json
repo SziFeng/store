@@ -53,6 +53,18 @@
 				"navigationBarTitleText":"下单"
 			}
         }
+        ,{
+            "path" : "pages/records/records",
+		    "style" : {
+				"navigationBarTitleText":"我的订单"
+			}
+        }
+        ,{
+            "path" : "pages/ware/ware",
+            "style" : {
+				"navigationBarTitleText":"商品列表"
+			}
+        }
     ],
 	// "tabBar": {
 	// 	"list": 
